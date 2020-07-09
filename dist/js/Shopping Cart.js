@@ -1,0 +1,1 @@
+"use strict";var tabs=document.getElementsByClassName("tabs")[0];$.get("../interface/showlist.php",function(e){var t=JSON.parse(e);if(0==e.code)alert("购物车没有东西");else for(var a=0;a<t.data.length;a++){var r=document.createElement("tr");for(var n in t.data[a]){var s=document.createElement("td");s.innerHTML=t.data[a][n],r.append(s)}tabs.append(r)}});
